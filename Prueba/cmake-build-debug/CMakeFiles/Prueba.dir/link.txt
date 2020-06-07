@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libPrueba.so -o libPrueba.so CMakeFiles/Prueba.dir/library.cpp.o 

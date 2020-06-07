@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -pthread -g  -shared -Wl,-soname,libVSC_SharedLibrary.so -o libVSC_SharedLibrary.so CMakeFiles/VSC_SharedLibrary.dir/src/library.cpp.o CMakeFiles/VSC_SharedLibrary.dir/src/GBCollector.cpp.o CMakeFiles/VSC_SharedLibrary.dir/src/Set.cpp.o  -lpthread 

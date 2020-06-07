@@ -1,1 +1,0 @@
-/usr/bin/c++  -pthread -g   CMakeFiles/Datos_2___2_0.dir/src/mainVSPtr.cpp.o CMakeFiles/Datos_2___2_0.dir/src/GBCollector.cpp.o CMakeFiles/Datos_2___2_0.dir/src/Set.cpp.o  -o Datos_2___2_0  -lpthread 
