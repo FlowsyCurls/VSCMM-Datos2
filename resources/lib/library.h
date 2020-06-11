@@ -1,4 +1,4 @@
-#ifndef VSC_SHAREDLIBRARY_LIBRARY_H __attribute__((visibility("default")));
+#ifndef VSC_SHAREDLIBRARY_LIBRARY_H
 #define VSC_SHAREDLIBRARY_LIBRARY_H
 
 #include "GBCollector.h"

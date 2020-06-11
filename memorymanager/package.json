@@ -12,7 +12,7 @@
 	"activationEvents": [
         "onCommand:memorymanager.start"
 	],
-	"main": "./src/extension.js",
+	"main": "./extension.js",
 	"contributes": {
 		"commands": [{
             "command": "memorymanager.start",

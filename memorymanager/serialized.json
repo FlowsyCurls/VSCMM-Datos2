@@ -1,6 +1,6 @@
 {
-    "remoteToggle": "1",
-    "connected": "1",
-    "userInfo": [{"username":"1","password":"2","ip":"3","port":"4"}],
-    "gbSetsList": []
+   "remoteToggle": "0",
+   "connected": "0",
+   "userInfo": [],
+   "gbSetsList": []
 }

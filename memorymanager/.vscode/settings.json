@@ -1,3 +1,5 @@
 {
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "git.ignoreLimitWarning": true
 }
