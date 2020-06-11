@@ -10,12 +10,12 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:memorymanager.helloWorld"
+        "onCommand:memorymanager.start"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
 		"commands": [{
-            "command": "memorymanager.helloWorld",
+            "command": "memorymanager.start",
             "title": "Hello World"
 
 		}]

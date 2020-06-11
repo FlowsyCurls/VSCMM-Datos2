@@ -91,14 +91,6 @@ function linkUser(data){
 }
 
 
-function linkUser_Client(){
-/*
-
-CONECTARSE AL SERVER;
-
-*/
-return true;
-}
 
 
 function parseUserInfo(data){
@@ -123,7 +115,19 @@ function clearJson(){
 function readJson(){
 	// Load the json File.
 	var fs = require('fs');	
-	fs.readFile(folderPath+fileName, 'utf8', function(err) {
+	fs.open(folderPath+fileName, 'utf8', function(err, fd) {
+		var finalize = function(buffer) {
+			fs.close(fd);
+			console.log(buffer);
+		};
+	
+		if (err) {
+			finalize();
+			return;
+		}
+
+
+	fs.read(folderPath+fileName, 'utf8', function(err) {
 		if (err) return null;
 	});
 	var strData = fs.readFileSync(folderPath+fileName, 'utf8');

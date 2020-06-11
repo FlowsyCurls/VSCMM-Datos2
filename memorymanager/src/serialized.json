@@ -1,11 +1,11 @@
 {
-   "remoteToggle": "1",
+   "remoteToggle": "0",
    "connected": "0",
    "userInfo": {
-      "username": "Ans",
-      "password": "324",
-      "ip": "D2sp2es",
-      "port": "3f3os"
+      "username": "1",
+      "password": "2",
+      "ip": "3",
+      "port": "4"
    },
    "gbSetsList": []
 }

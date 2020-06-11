@@ -1,4 +1,4 @@
-// #include <zconf.h>
+#include <zconf.h>
 #include "lib/VSPointer.h"
 #include "lib/LinkedList.h"
 
