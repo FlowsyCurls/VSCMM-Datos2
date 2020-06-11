@@ -1,0 +1,264 @@
+\hypertarget{class_v_s_pointer}{}\section{V\+S\+Pointer$<$ T $>$ Class Template Reference}
+\label{class_v_s_pointer}\index{V\+S\+Pointer$<$ T $>$@{V\+S\+Pointer$<$ T $>$}}
+
+
+{\ttfamily \#include $<$V\+S\+Pointer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_s_pointer_ac97055c9312d04e6bd6dc44a052edeb2}{V\+S\+Pointer} (T value)
+\item 
+\hyperlink{class_v_s_pointer_a37fe91bf9fd5546c9eb915575580918d}{$\sim$\+V\+S\+Pointer} ()
+\item 
+T \hyperlink{class_v_s_pointer_a9eb474e125653fc8ea6ad4c607a97af5}{operator\&} ()
+\item 
+T \& \hyperlink{class_v_s_pointer_ad193217b66fa75f6d01c3c0f967a2956}{operator$\ast$} ()
+\item 
+T $\ast$ \hyperlink{class_v_s_pointer_a7600772e4288bb0fb9116770a13fa7c1}{operator-\/$>$} ()
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_adadfd9d11fa40cfd077d3f5cfef9bccb}{operator=} (\hyperlink{class_v_s_pointer}{V\+S\+Pointer} pointed)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_a17a391ec81050ee75cdb557f95696a3b}{operator=} (int target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_abd461f1b77da8326aa066b7d049233f1}{operator=} (char target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_adeed9f6af2d458737ce4ca6006d5ef0c}{operator=} (bool target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_a08ec6c2ffdc15addd4abfd3717125b24}{operator=} (long target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_ae88d3e8d4118958a0d8af724a531eb09}{operator=} (short target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_a637568546a13204a821a99b0d3c086b3}{operator=} (float target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_a133204d47d39479e68809bce63e7d868}{operator=} (double target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_a89f76b54aee2b945ff6fff62c93f790e}{operator=} (long long target)
+\item 
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} \& \hyperlink{class_v_s_pointer_a5db77db09149ba2f3629aed116a296c8}{operator=} (long double target)
+\item 
+void \hyperlink{class_v_s_pointer_a5898a22207831d35b14ff7406f298b40}{verify\+Type} (const string \&type2, T target)
+\item 
+void \hyperlink{class_v_s_pointer_a7a632395682e19fef51ba672afcd2ee9}{to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$ \hyperlink{class_v_s_pointer_af6ce7d8fda020d20ee9091cf266ec9b2}{New} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \hyperlink{class_v_s_pointer_afc9f1563ff1b433a961a885c14d41541}{data}
+\item 
+string \hyperlink{class_v_s_pointer_a33b34d6a96cd7f503997dac4002a2b2f}{id}
+\item 
+string \hyperlink{class_v_s_pointer_a48510dcc016a712b5a9ebf05e12d6fdd}{type}
+\item 
+void $\ast$$\ast$ \hyperlink{class_v_s_pointer_a0368981cbf3f7f088e6114f35a4a9582}{address} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_v_s_pointer_ac97055c9312d04e6bd6dc44a052edeb2}\label{class_v_s_pointer_ac97055c9312d04e6bd6dc44a052edeb2}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!V\+S\+Pointer@{V\+S\+Pointer}}
+\index{V\+S\+Pointer@{V\+S\+Pointer}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{V\+S\+Pointer()}{VSPointer()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::\hyperlink{class_v_s_pointer}{V\+S\+Pointer} (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} class constructor. 
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_v_s_pointer_a37fe91bf9fd5546c9eb915575580918d}\label{class_v_s_pointer_a37fe91bf9fd5546c9eb915575580918d}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!````~V\+S\+Pointer@{$\sim$\+V\+S\+Pointer}}
+\index{````~V\+S\+Pointer@{$\sim$\+V\+S\+Pointer}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{$\sim$\+V\+S\+Pointer()}{~VSPointer()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::$\sim$\hyperlink{class_v_s_pointer}{V\+S\+Pointer} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer} class destructor. Delete T$\ast$ and free its memory. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_s_pointer_af6ce7d8fda020d20ee9091cf266ec9b2}\label{class_v_s_pointer_af6ce7d8fda020d20ee9091cf266ec9b2}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!New@{New}}
+\index{New@{New}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$T$>$ \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::New (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a9eb474e125653fc8ea6ad4c607a97af5}\label{class_v_s_pointer_a9eb474e125653fc8ea6ad4c607a97af5}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator\&()}{operator\&()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator \& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Now ampersand dereferences the pointer value. \begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_s_pointer_ad193217b66fa75f6d01c3c0f967a2956}\label{class_v_s_pointer_ad193217b66fa75f6d01c3c0f967a2956}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overload $\ast$ operator. \begin{DoxyReturn}{Returns}
+T\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_s_pointer_a7600772e4288bb0fb9116770a13fa7c1}\label{class_v_s_pointer_a7600772e4288bb0fb9116770a13fa7c1}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloaded arrow operator. \begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_s_pointer_adadfd9d11fa40cfd077d3f5cfef9bccb}\label{class_v_s_pointer_adadfd9d11fa40cfd077d3f5cfef9bccb}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$}]{pointed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check the type matching before coping the pointed data to the data. 
+\begin{DoxyParams}{Parameters}
+{\em pointed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_s_pointer_a17a391ec81050ee75cdb557f95696a3b}\label{class_v_s_pointer_a17a391ec81050ee75cdb557f95696a3b}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{int}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Operator \char`\"{}=\char`\"{} overload on all supported variable types. 
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_s_pointer_abd461f1b77da8326aa066b7d049233f1}\label{class_v_s_pointer_abd461f1b77da8326aa066b7d049233f1}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{char}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_adeed9f6af2d458737ce4ca6006d5ef0c}\label{class_v_s_pointer_adeed9f6af2d458737ce4ca6006d5ef0c}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{bool}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a08ec6c2ffdc15addd4abfd3717125b24}\label{class_v_s_pointer_a08ec6c2ffdc15addd4abfd3717125b24}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{long}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_ae88d3e8d4118958a0d8af724a531eb09}\label{class_v_s_pointer_ae88d3e8d4118958a0d8af724a531eb09}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{short}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a637568546a13204a821a99b0d3c086b3}\label{class_v_s_pointer_a637568546a13204a821a99b0d3c086b3}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{float}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a133204d47d39479e68809bce63e7d868}\label{class_v_s_pointer_a133204d47d39479e68809bce63e7d868}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{double}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a89f76b54aee2b945ff6fff62c93f790e}\label{class_v_s_pointer_a89f76b54aee2b945ff6fff62c93f790e}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{long long}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a5db77db09149ba2f3629aed116a296c8}\label{class_v_s_pointer_a5db77db09149ba2f3629aed116a296c8}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!operator=@{operator=}}
+\index{operator=@{operator=}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_v_s_pointer}{V\+S\+Pointer}\& \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{long double}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_v_s_pointer_a7a632395682e19fef51ba672afcd2ee9}\label{class_v_s_pointer_a7a632395682e19fef51ba672afcd2ee9}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Print the \hyperlink{class_v_s_pointer}{V\+S\+Pointer} information. \mbox{\Hypertarget{class_v_s_pointer_a5898a22207831d35b14ff7406f298b40}\label{class_v_s_pointer_a5898a22207831d35b14ff7406f298b40}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!verify\+Type@{verify\+Type}}
+\index{verify\+Type@{verify\+Type}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{verify\+Type()}{verifyType()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::verify\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{type2,  }\item[{T}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check the type matching before switching the value of the pointer to the target value. 
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_v_s_pointer_a0368981cbf3f7f088e6114f35a4a9582}\label{class_v_s_pointer_a0368981cbf3f7f088e6114f35a4a9582}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!address@{address}}
+\index{address@{address}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void$\ast$$\ast$ \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::address = nullptr}
+
+\mbox{\Hypertarget{class_v_s_pointer_afc9f1563ff1b433a961a885c14d41541}\label{class_v_s_pointer_afc9f1563ff1b433a961a885c14d41541}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!data@{data}}
+\index{data@{data}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::data}
+
+\mbox{\Hypertarget{class_v_s_pointer_a33b34d6a96cd7f503997dac4002a2b2f}\label{class_v_s_pointer_a33b34d6a96cd7f503997dac4002a2b2f}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!id@{id}}
+\index{id@{id}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+string \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::id}
+
+\mbox{\Hypertarget{class_v_s_pointer_a48510dcc016a712b5a9ebf05e12d6fdd}\label{class_v_s_pointer_a48510dcc016a712b5a9ebf05e12d6fdd}} 
+\index{V\+S\+Pointer@{V\+S\+Pointer}!type@{type}}
+\index{type@{type}!V\+S\+Pointer@{V\+S\+Pointer}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+string \hyperlink{class_v_s_pointer}{V\+S\+Pointer}$<$ T $>$\+::type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_v_s_pointer_8h}{V\+S\+Pointer.\+h}\end{DoxyCompactItemize}

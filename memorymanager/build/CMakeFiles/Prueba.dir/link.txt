@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Prueba.dir/main.cpp.o  -o Prueba -Wl,-rpath,/home/shakime/Desktop/CodeWorks/VSCMM-Datos2/memorymanager/lib ../lib/libVSC_SharedLibrary.so 

@@ -21,7 +21,7 @@ using json = nlohmann::json;
 
 class DATOS_2___2_0_GBCOLLECTOR_H GBCollector {
 private:
-    const string filename = "serialJson.js"; /* Json file name */
+    const string filename = "serialized.json"; /* Json file name */
     string path; /* path for json file */
     static GBCollector *instance; /* static gbCollector instance. */
 
@@ -68,8 +68,8 @@ public:
      */
     static string currentPath();
 
-    void serialJson();
-    static void serialJson_aux(json &gbJson, Set* set, int index);
+    void generateJson();
+    static void serializeSetsToJson(json &gbJson, Set* set, int index);
 
     /**
      * Write a Jstring in a .json file

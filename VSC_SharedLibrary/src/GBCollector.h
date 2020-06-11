@@ -1,4 +1,4 @@
-#ifndef VSC_SHAREDLIBRARY_GBCOLLECTOR_H __attribute__((visibility("default")));
+#ifndef VSC_SHAREDLIBRARY_GBCOLLECTOR_H
 #define VSC_SHAREDLIBRARY_GBCOLLECTOR_H
 
 #include <map>
@@ -21,9 +21,9 @@ using json = nlohmann::json;
 
 class VSC_SHAREDLIBRARY_GBCOLLECTOR_H GBCollector {
 private:
-
-    const string filename = "serialJson.js"; /* Json file name */
-//    string path; /* path for json file */
+    
+    const string filename = "serialized.json"; /* Json file name */
+    string path; /* path for json file */
     static GBCollector *instance; /* static gbCollector instance. */
 
     /* Private Constructor */
@@ -69,8 +69,8 @@ public:
      */
     static string currentPath();
 
-    void serialJson();
-    static void serialJson_aux(json &gbJson, Set* set, int index);
+    void generateJson();
+    static void serializeSetsToJson(json &gbJson, Set* set, int index);
 
     /**
      * Write a Jstring in a .json file
