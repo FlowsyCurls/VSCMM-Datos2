@@ -1,3 +1,0 @@
-{
-    "gbSetsList": null
-}

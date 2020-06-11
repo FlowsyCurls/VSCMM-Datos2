@@ -22,27 +22,30 @@ void GBCollector::sweapThread() {
         this_thread::sleep_for (std::chrono::seconds(7));
         // Sweap then load Json.
         sweapMemoryLeaks();
-        serialJson();
+        generateJson();
     }
 }
 
-void GBCollector::serialJson() {
+void GBCollector::generateJson() {
     cout << "\n\n[GBCollector]\tSerializing...!\n---------------------------------------\n";
     json gbJson;
     gbJson["gbSetsList"] = {};
     // Push in each set's json brackets.
     for (int s = 0; s < generalSet->size(); s++) {
         Set *set = generalSet->at(s);
-        serialJson_aux(gbJson,set,s);
+        serializeSetsToJson(gbJson, set, s);
     }// To write object's data members in a file.
     currentPath();
+    gbJson["connected"] = 0;
+    gbJson["remoteToggle"] = 0;
+    gbJson["userInfo"] = {};
     writeJsonFile(gbJson);
     // Print
-    cout << gbJson.find("gbSetsList").value() << endl;
+//    cout << gbJson.find("gbSetsList").value() << endl;
     cout << "---------------------------------------\n";
 }
 
-void GBCollector::serialJson_aux(json &gbJson, Set* set, int index){
+void GBCollector::serializeSetsToJson(json &gbJson, Set* set, int index){
     // Conversion to string of the memory address of the vspointer.
     ostringstream get_the_address;
     get_the_address << set->getVsAddress();
@@ -72,8 +75,8 @@ void GBCollector::serialJson_aux(json &gbJson, Set* set, int index){
 }
 
 void GBCollector::writeJsonFile(const json& data){
-//    path = currentPath()+filename;
-//    cout << "\n[GB-Path]\tCurrent Path :\t" << path << endl << endl;
+    path = currentPath()+filename;
+    cout << "\n[GB-Path]\tCurrent Path :\t" << path << endl << endl;
     ofstream outfile (filename); // Open in constructor
     outfile << setw(4) <<data << endl;
 }
@@ -230,7 +233,6 @@ string GBCollector::currentPath() {
         string token = cwd;
         string delimiter = "cmake-build-debug";
         string path = token.substr(0, token.find(delimiter));
-        cout << "\n[GB-Path]\tCurrent Path :\t" << path << endl << endl;
         return path;
     }
     cout <<"\n[GB-Path]\tPath ERROR!";
