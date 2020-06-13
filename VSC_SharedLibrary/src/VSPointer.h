@@ -21,8 +21,8 @@ public:
     void** address = nullptr;
 
     /**
-     * VSPointer class constructor.
-     * @param p
+     * @brief VSPointer class constructor.
+     * @param T
      */
     explicit VSPointer(T value){
         data = (typeof(*data)*)malloc(sizeof(*data));
@@ -39,7 +39,7 @@ public:
         return VSPointer<T>(T());
     }
     /**
-     * VSPointer class destructor.
+     * @brief VSPointer class destructor.
      * Delete T* and free its memory.
      */
     ~VSPointer() {
@@ -48,7 +48,7 @@ public:
     }
 
     /**
-     * Now ampersand dereferences the pointer value.
+     * @brief Now ampersand dereferences the pointer value.
      * @return T
      */
     T operator &(){
@@ -56,7 +56,7 @@ public:
     }
 
     /**
-     * Overload * operator.
+     * @brief Overload * operator.
      * @return T&
      */
     T& operator *(){
@@ -64,7 +64,7 @@ public:
     }
 
     /**
-     * Overloaded arrow operator.
+     * @brief Overloaded arrow operator.
      * @return T*
      */
     T* operator -> (){
@@ -72,7 +72,7 @@ public:
     }
 
     /**
-     * Check the type matching before coping the pointed data to the data.
+     * @brief Check the type matching before coping the pointed data to the data.
      * @param pointed
      * @return VSPointer&
      */
@@ -84,7 +84,7 @@ public:
     }
 
     /**
-     * Operator "=" overload on all supported variable types.
+     * @brief Operator "=" overload on all supported variable types.
      * @param target
      * @return VSPointer&
      */
@@ -99,7 +99,7 @@ public:
     VSPointer& operator=(long double target){verifyType(typeid(&target).name(), target);}
 
     /**
-     * Check the type matching before switching the value of the pointer to the target value.
+     * @brief Check the type matching before switching the value of the pointer to the target value.
      * @param type
      * @param target
      */
@@ -113,7 +113,7 @@ public:
     }
 
     /**
-     * Print the VSPointer information.
+     * @brief Print the VSPointer information.
      */
     void toString() {
         cout << "VSP: " << this

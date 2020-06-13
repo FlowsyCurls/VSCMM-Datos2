@@ -21,7 +21,7 @@ using json = nlohmann::json;
 
 class VSC_SHAREDLIBRARY_GBCOLLECTOR_H GBCollector {
 private:
-
+    
     const string filename = "serialized.json"; /* Json file name */
     string path; /* path for json file */
     static GBCollector *instance; /* static gbCollector instance. */
